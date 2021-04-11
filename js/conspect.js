@@ -177,38 +177,38 @@
 // console.log(rgbColors);
 
 
-const atTheOldToad = {
-  potions: [
-    { name: 'Зелье скорости', price: 460 },
-    { name: 'Дыхание дракона', price: 780 },
-    { name: 'Каменная кожа', price: 520 },
-  ],
-  // Пиши код ниже этой строки
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(potionName) {
-    if (this.potions.includes(potionName)) {
-      return `Зелье ${potionName} уже есть в инвентаре!`;
-    }
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Зелье скорости', price: 460 },
+//     { name: 'Дыхание дракона', price: 780 },
+//     { name: 'Каменная кожа', price: 520 },
+//   ],
+//   // Пиши код ниже этой строки
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     if (this.potions.includes(potionName)) {
+//       return `Зелье ${potionName} уже есть в инвентаре!`;
+//     }
 
-    this.potions.push(potionName);
-  },
-  removePotion(potionName) {
-    const { potions } = this;
+//     this.potions.push(potionName);
+//   },
+//   removePotion(potionName) {
+//     const { potions } = this;
 
-    for (let i = 0; i < potions.length; i += 1) {
-      const {name} = potions[i];
+//     for (let i = 0; i < potions.length; i += 1) {
+//       const {name} = potions[i];
       
-      if (name === potionName) {
-        console.log(`${potionName} requires removal`);
-        console.log(i);
+//       if (name === potionName) {
+//         console.log(`${potionName} requires removal`);
+//         console.log(i);
 
-        potions.splice(i, 1);
-      }
+//         potions.splice(i, 1);
+//       }
       
-    }
-    return 'item is absent';
+//     }
+//     return 'item is absent';
     
 
       
@@ -233,17 +233,18 @@ const atTheOldToad = {
     // }
 
     // this.potions.splice(potionIndex, 1);
-  },
-  updatePotionName(oldName, newName) {
+//   },
+//   updatePotionName(oldName, newName) {
     
-    for (let i = 0; i < this.potions.length; i += 1) {
-      if (oldName === this.potions[i].name) {
-      this.potions[i].name =  newName
-      }
-    }
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (oldName === this.potions[i].name) {
+//       this.potions[i].name =  newName
+//       }
+//     }
        
-      return `Зелья ${oldName} нет в инвентаре!`;
-  },
-};
-console.log(atTheOldToad.getPotions());
-atTheOldToad.removePotion('Дыхание дракона');
+//       return `Зелья ${oldName} нет в инвентаре!`;
+//   },
+// };
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.removePotion('Дыхание дракона');
+
