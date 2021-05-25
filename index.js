@@ -5,4 +5,5 @@
 // import "./js-core/toBoolean.js";
 // import "./js-core/falsy-values.js";
 // import "./js/callback.js";
-import "./js/constructor.js";
+// import "./js/constructor.js";
+import "./js/lesson-5.js";
